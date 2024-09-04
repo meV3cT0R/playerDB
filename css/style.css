@@ -1,19 +1,36 @@
 * {
     margin :0;
     padding:0;
-     }
+}
+
+body {
+    background-color: rgba(0,0,0,0.1);
+}
 .card-img {
     width :150px;
     height :150px;
     object-fit : cover;
+    transition:.5s;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
+.card-img:hover {
+    transform:scale(1.2);
+}
+.heading {
+    font-size : 50px; 
+    color: rgba(45,45,132,0.8);
+    text-align:center;
+    margin:40px 40px;
+}
+
 .card {
+    cursor:pointer;
+    box-shadow: 2px 2px 5px gray;
     display:flex;
-    justify-content: space-between;
-    border :1px solid gray;
     border-radius : 15px;
+    overflow:hidden;
 }
 .card-body {
     padding:10px 20px;
@@ -21,9 +38,11 @@
     display : flex;
     flex-direction : column;
     justify-content: space-between;
+    width:100%;
 }
 
 .card-body div h1 {
+    color: rgba(45,45,132,0.8);
     font-size:1.8rem;
     font-weight:800;
 }
@@ -34,6 +53,7 @@
 
 .card-body button {
     padding:5px 10px;
+    border-radius:5px;
 }
 button {
     background-color: rgba(45,45,132,0.5);
@@ -42,6 +62,7 @@ button {
     padding:5px 10px;
     transition: .3s;
     cursor:pointer;
+    width:100%;
 }
 
 button:hover {
@@ -51,10 +72,9 @@ button:hover {
 
 .player_detail {
     width:600px;
-    border:1px solid gray;
-    border-radius:15px;
     padding:10px 20px;
     margin :20px auto;
+    border-bottom:1px solid black;
 }
 
 .player_container {
@@ -62,25 +82,41 @@ button:hover {
 }
 
 .tab {
+    display:inline-block;
+    box-shadow:1px 1px 3px gray;
+    border-radius: 5px;
+    margin-top: 5px;
    list-style-type:none; 
 }
-.tab li {
+.tab li{
+    font-size:1.1rem;
     display:inline-block;
     cursor:pointer;
     padding:5px 10px;
-    border:1px solid gray;
+}
+
+.tab li:first-child {
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+.tab li:last-child{
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
 }
 .container {
+    background-color:rgba(255,255,255,0.5);
     display:grid;
-    padding:20px 20px;
-    column-gap : 50px;
+    padding:40px 40px;
+    gap : 50px;
     grid-template-columns: 1fr 1fr;
     width:800px;
     margin:0px auto;
+    border-radius:25px;
 }
 
 
 .tab_container {
+    text-align:center;
     margin-top:20px;
 }
 
@@ -91,9 +127,6 @@ button:hover {
         font-size:1.4rem;
 
 }
-.tab_content div {
-    margin-bottom:10px;
-}
 
 .active {
     color:white;
@@ -101,3 +134,8 @@ button:hover {
 }
 
 
+.footer {
+    padding:50px 10px;
+    font-size:1.2rem;
+    text-align:center;
+}
