@@ -9,7 +9,7 @@ $(function () {
       const player = data.find((dat) => dat.id == id);
       $(document.body).append(
         $("<div></div>").addClass("player_detail").css({
-          background: "url('../images/profile_bg.drawio.svg')",
+          background: "url('../images/profile_bg_2.drawio.svg')",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center top",
           backgroundSize: "cover",
