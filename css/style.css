@@ -1,0 +1,101 @@
+* {
+    margin :0;
+    padding:0;
+     }
+.card-img {
+    width :150px;
+    height :150px;
+    object-fit : cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card {
+    display:flex;
+    justify-content: space-between;
+    border :1px solid gray;
+    border-radius : 15px;
+}
+.card-body {
+    padding:10px 20px;
+    text-align:left;
+    display : flex;
+    flex-direction : column;
+    justify-content: space-between;
+}
+
+.card-body div h1 {
+    font-size:1.8rem;
+    font-weight:800;
+}
+.card-body div p {
+    font-size:1.2rem;
+    color : rgba(0,0,0,0.5);
+}
+
+.card-body button {
+    padding:5px 10px;
+}
+button {
+    background-color: rgba(45,45,132,0.5);
+    border : 0;
+    color:white;
+    padding:5px 10px;
+    transition: .3s;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color: rgba(45,45,132,0.9);
+}
+
+
+.player_detail {
+    width:600px;
+    border:1px solid gray;
+    border-radius:15px;
+    padding:10px 20px;
+    margin :20px auto;
+}
+
+.player_container {
+    padding : 10px 20px;
+}
+
+.tab {
+   list-style-type:none; 
+}
+.tab li {
+    display:inline-block;
+    cursor:pointer;
+    padding:5px 10px;
+    border:1px solid gray;
+}
+.container {
+    display:grid;
+    padding:20px 20px;
+    column-gap : 50px;
+    grid-template-columns: 400px 400px;
+}
+
+
+.tab_container {
+    margin-top:20px;
+}
+
+.tab_content {
+    margin-top:10px;
+}
+.tab_content div h1 {
+        font-size:1.4rem;
+
+}
+.tab_content div {
+    margin-bottom:10px;
+}
+
+.active {
+    color:white;
+    background-color: rgba(45,45,132,0.5);
+}
+
+
