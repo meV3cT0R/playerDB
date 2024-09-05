@@ -6,7 +6,7 @@ $(function () {
         .append($("<h1> </h1>").text("Loading...")),
     );
 
-    $.get("http://localhost:8000/data/data.json", function (data, status) {
+    $.get("http://localhost:8080/data/data.json", function (data, status) {
       if (status == "success") $(".container").empty();
       console.log("data.length : " + data.length);
       for (const dat of data) {
@@ -28,7 +28,7 @@ $(function () {
                     .addClass("more_detail")
                     .click(function () {
                       window.open(
-                        `http://localhost:8000/player_details.html?id=${dat.id}`,
+                        `http://localhost:8080/player_details.html?id=${dat.id}`,
                         "_self",
                       );
                     }),

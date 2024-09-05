@@ -74,7 +74,7 @@ button:hover {
     width:600px;
     padding:10px 20px;
     margin :20px auto;
-    border-bottom:1px solid black;
+    border-radius:25px;
 }
 
 .player_container {
@@ -117,7 +117,7 @@ button:hover {
 
 .tab_container {
     text-align:center;
-    margin-top:20px;
+    margin-top:35px;
 }
 
 .tab_content {
